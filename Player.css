@@ -1,0 +1,141 @@
+.player {
+  height: 90px;
+  background-color: #282828;
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.player__song-info {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.player__song-info img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.player__song-details h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.player__song-details p {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.player__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.player__buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.player__button {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.player__button:hover {
+  color: white;
+}
+
+.player__button--play {
+  background-color: white;
+  color: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__button--play:hover {
+  transform: scale(1.05);
+}
+
+.player__progress {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.player__progress span {
+  font-size: 12px;
+  color: #b3b3b3;
+  width: 40px;
+}
+
+.player__progress input[type="range"] {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  background-color: #535353;
+  border-radius: 2px;
+  outline: none;
+}
+
+.player__progress input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.player__progress:hover input[type="range"]::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.player__volume {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: flex-end;
+}
+
+.player__volume input[type="range"] {
+  width: 100px;
+  height: 4px;
+  margin-left: 10px;
+  -webkit-appearance: none;
+  background-color: #535353;
+  border-radius: 2px;
+  outline: none;
+}
+
+.player__volume input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.player__volume:hover input[type="range"]::-webkit-slider-thumb {
+  opacity: 1;
+}
